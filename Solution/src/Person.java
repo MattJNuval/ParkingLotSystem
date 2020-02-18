@@ -1,9 +1,15 @@
 public class Person {
+
+    //region INSTANCE, CONSTRUCTORS, GETTERS AND SETTERS
+
+    //region INSTANCE
     private String name;
     private Location address;
     private String email;
     private String phone;
+    //endregion
 
+    //region CONSTRUCTORS
     public Person() {
 
     }
@@ -14,9 +20,9 @@ public class Person {
         this.email = email;
         this.phone = phone;
     }
+    //endregion
 
-
-
+    //region GETTERS AND SETTERS
     public String getName() {
         return name;
     }
@@ -48,5 +54,7 @@ public class Person {
     public void setPhone(String phone) {
         this.phone = phone;
     }
+    //endregion
 
+    //endregion
 }

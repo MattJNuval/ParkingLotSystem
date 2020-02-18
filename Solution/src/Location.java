@@ -1,10 +1,16 @@
 public class Location {
+
+    //region INSTANCES, CONSTRUCTORS, GETTER AND SETTERS
+
+    //region INSTANCES
     private String streetAddress;
     private String city;
     private String state;
     private String zipcode;
     private String country;
+    //endregion
 
+    //region CONSTRUCTORS
     private Location() {
 
     }
@@ -16,7 +22,9 @@ public class Location {
         this.zipcode = zipcode;
         this.country = country;
     }
+    //endregion
 
+    //region GETTERS AND SETTERS
     public String getStreetAddress() {
         return streetAddress;
     }
@@ -56,6 +64,8 @@ public class Location {
     public void setCountry(String country) {
         this.country = country;
     }
+    //endregion
 
+    //endregion
 
 }

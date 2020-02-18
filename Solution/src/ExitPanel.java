@@ -1,15 +1,21 @@
 public class ExitPanel {
 
     //region INSTANCES, CONSTRUCTORS, GETTERS AND SETTERS
-    private String id;
 
+    //region INSTANCES
+    private String id;
+    //endregion
+
+    //region CONSTRUCTORS
     public ExitPanel(String id) {
         this.id = id;
     }
     public ExitPanel() {
 
     }
+    //endregion
 
+    //region GETTERS AND SETTERS
     public String getId() {
         return id;
     }
@@ -17,6 +23,8 @@ public class ExitPanel {
     public void setId(String id) {
         this.id = id;
     }
+    //endregion
+
     //endregion
 
     public boolean scanTicket() {

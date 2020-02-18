@@ -1,8 +1,12 @@
 public class ParkingAttendantPortal {
 
     //region INSTANCES, CONSTRUCTORS, GETTERS, AND SETTERS
-    private String id;
 
+    //region INSTANCES
+    private String id;
+    //endregion
+
+    //region CONSTRUCTORS
     public ParkingAttendantPortal() {
 
     }
@@ -10,8 +14,9 @@ public class ParkingAttendantPortal {
     public ParkingAttendantPortal(String id) {
         this.id = id;
     }
+    //endregion
 
-
+    //region GETTERS AND SETTERS
     public String getId() {
         return id;
     }
@@ -19,6 +24,8 @@ public class ParkingAttendantPortal {
     public void setId(String id) {
         this.id = id;
     }
+    //endregion
+
     //endregion
 
     public boolean scanTicket() {

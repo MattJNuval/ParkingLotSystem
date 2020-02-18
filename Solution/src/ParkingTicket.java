@@ -3,12 +3,16 @@ import java.util.Date;
 public class ParkingTicket {
 
     //region INSTANCES, CONSTRUCTORS, GETTERS AND SETTERS
+
+    //region INSTANCE
     private String ticketNumber;
     private Date issuedAt;
     private Date payedAt;
     private double payedAmount;
     private ParkingTicketStatus status;
+    //endregion
 
+    //region CONSTRUCTORS
     public ParkingTicket() {
 
     }
@@ -20,8 +24,9 @@ public class ParkingTicket {
         this.payedAmount = payedAmount;
         this.status = status;
     }
+    //endregion
 
-
+    //region GETTERS AND SETTERS
     public String getTicketNumber() {
         return ticketNumber;
     }
@@ -61,6 +66,8 @@ public class ParkingTicket {
     public void setStatus(ParkingTicketStatus status) {
         this.status = status;
     }
+    //endregion
+
     //endregion
 
 }

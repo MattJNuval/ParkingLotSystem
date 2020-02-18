@@ -1,15 +1,21 @@
 public class ParkingFloor {
 
     //region INSTANCES, CONSTRUCTORS, GETTERS AND SETTERS
-    private String name;
 
+    //region INSTANCES
+    private String name;
+    //endregion
+
+    //region CONSTRUCTORS
     public ParkingFloor(String name) {
         this.name = name;
     }
     public ParkingFloor() {
 
     }
+    //endregion
 
+    //region GETTERS AND SETTERS
     public String getName() {
         return name;
     }
@@ -19,11 +25,17 @@ public class ParkingFloor {
     }
     //endregion
 
+    //endregion
+
     public void updateDisplayBoard() {
         // TODO: Implementation
     }
 
     public void addParkingSpot() {
+        // TODO: Implementation
+    }
+
+    public void assignVehicleToSpot() {
         // TODO: Implementation
     }
 
