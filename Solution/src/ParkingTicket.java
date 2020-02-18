@@ -1,3 +1,4 @@
+import java.time.LocalDateTime;
 import java.util.Date;
 
 public class ParkingTicket {
@@ -6,8 +7,8 @@ public class ParkingTicket {
 
     //region INSTANCE
     private String ticketNumber;
-    private Date issuedAt;
-    private Date payedAt;
+    private LocalDateTime issuedAt;
+    private LocalDateTime payedAt;
     private double payedAmount;
     private ParkingTicketStatus status;
     //endregion
@@ -17,7 +18,7 @@ public class ParkingTicket {
 
     }
 
-    public ParkingTicket(String tocketNumber, Date issuedAt, Date payedAt, double payedAmount, ParkingTicketStatus status) {
+    public ParkingTicket(String tocketNumber, LocalDateTime issuedAt, LocalDateTime payedAt, double payedAmount, ParkingTicketStatus status) {
         this.ticketNumber = tocketNumber;
         this.issuedAt = issuedAt;
         this.payedAt = payedAt;
@@ -35,19 +36,19 @@ public class ParkingTicket {
         this.ticketNumber = ticketNumber;
     }
 
-    public Date getIssuedAt() {
+    public LocalDateTime getIssuedAt() {
         return issuedAt;
     }
 
-    public void setIssuedAt(Date issuedAt) {
+    public void setIssuedAt(LocalDateTime issuedAt) {
         this.issuedAt = issuedAt;
     }
 
-    public Date getPayedAt() {
+    public LocalDateTime getPayedAt() {
         return payedAt;
     }
 
-    public void setPayedAt(Date payedAt) {
+    public void setPayedAt(LocalDateTime payedAt) {
         this.payedAt = payedAt;
     }
 
